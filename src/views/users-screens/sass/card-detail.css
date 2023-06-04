@@ -1,0 +1,117 @@
+@font-face {
+  font-family: Mont;
+  src: url(../../../../assets/fonts/Mont-Regular.otf);
+}
+@font-face {
+  font-family: Mont-Bold;
+  src: url(../../../../assets/fonts/Mont-Bold.otf);
+}
+p {
+  margin-bottom: 0;
+}
+
+.thumbs-wrapper {
+  display: none !important;
+}
+
+.carousel .carousel-dots .slick-active {
+  background-color: #0077b9;
+}
+
+.carousel .carousel-dots {
+  border-color: #0077b9;
+}
+
+.cardDetail {
+  display: grid;
+  grid-template-rows: 4rem 2fr;
+  gap: 30px;
+  background-color: #fff;
+  padding: 3vw;
+  border-radius: 16px;
+  margin-bottom: 3rem !important;
+  min-height: 185px;
+  width: 100%;
+}
+@media only screen and (max-width: 992px) {
+  .cardDetail {
+    height: 13.2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cardDetail {
+    font-size: 2vw;
+    gap: 2vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .cardDetail {
+    gap: 1vw;
+    grid-template-rows: 3rem 2fr;
+  }
+}
+.cardDetail:hover {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+    rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+.cardDetail_top {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 4rem 3fr;
+  gap: 10px;
+}
+@media only screen and (max-width: 992px) {
+  .cardDetail_top {
+    grid-template-columns: 1fr 9fr;
+  }
+}
+.cardDetail_top-img {
+  justify-self: start;
+  border-radius: 50%;
+  display: grid;
+  position: relative;
+  top: -4px;
+  width: 57px !important;
+  height: 57px !important;
+  justify-content: center;
+  align-content: center;
+}
+.cardDetail_top-info {
+  display: grid;
+  justify-items: start;
+  justify-self: start;
+}
+.cardDetail_top-info h5 {
+  color: black;
+  font-family: 'Mont-Bold', Helvetica, Arial, serif, 'Mont-Bold', Helvetica,
+    Arial, serif;
+  margin-bottom: 0;
+  font-size: 16px;
+  text-align: initial;
+}
+@media only screen and (max-width: 768px) {
+  .cardDetail_top-info h5 {
+    font-size: 2.5vw;
+  }
+}
+.cardDetail_top-info p {
+  text-align: left;
+  margin-bottom: 0;
+  color: #898989;
+  font-size: 16px;
+  padding: 0px 10px 0 0;
+}
+.cardDetail_bottom {
+  color: black;
+}
+.cardDetail_bottom p {
+  text-align: left;
+}
+@media only screen and (max-width: 500px) {
+  .cardDetail_bottom p {
+    line-height: 2;
+  }
+} /*# sourceMappingURL=card-detail.css.map */

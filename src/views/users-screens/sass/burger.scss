@@ -1,0 +1,7 @@
+.burger {
+  display: none;
+  @media only screen and (max-width: 801px) {
+    display: block;
+    justify-self: end;
+  }
+}

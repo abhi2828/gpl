@@ -1,0 +1,360 @@
+@font-face {
+  font-family: Mont;
+  src: url(../../../../assets/fonts/Mont-Regular.otf);
+}
+@font-face {
+  font-family: Mont-Bold;
+  src: url(../../../../assets/fonts/Mont-Bold.otf);
+}
+p {
+  margin-bottom: 0;
+}
+
+.thumbs-wrapper {
+  display: none !important;
+}
+
+.carousel .carousel-dots .slick-active {
+  background-color: #0077b9;
+}
+
+.carousel .carousel-dots {
+  border-color: #0077b9;
+}
+
+body {
+  overflow-x: hidden; /* Hide scrollbars */
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
+.details {
+  font-family: 'Mont';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: capitalize;
+  color: #333333;
+}
+
+.maroon_color {
+  background-color: #9b034a !important;
+  color: #9b034a !important;
+  height: 8px;
+  border-top-left-radius: 30px;
+}
+
+.primary_color {
+  background-color: #0077b9;
+  color: #0077b9;
+  height: 8px;
+}
+
+.success_color {
+  background-color: #6fa624 !important;
+  color: #6fa624 !important;
+  height: 8px;
+  border-top-right-radius: 30px;
+}
+
+.user_type {
+  color: #6fa624 !important;
+}
+
+.user_type_gray {
+  color: #898989;
+}
+
+.btn_css {
+  padding: 16px 32px;
+  width: auto;
+  min-width: 150px;
+  font-size: 13px;
+  height: 47px;
+  color: #fff !important;
+  background: #0077b9 !important;
+  border-radius: 12px;
+  text-align: center !important;
+  margin-bottom: 30px;
+}
+
+.outline_btn_css {
+  padding: 16px 32px;
+  width: auto;
+  min-width: 150px;
+  font-size: 13px;
+  height: 47px;
+  color: #fff !important;
+  border-radius: 12px;
+  text-align: center !important;
+  margin-bottom: 30px;
+}
+
+.header_wraper h2 {
+  margin: 10px;
+  font-family: 'Mont-Bold', Helvetica, Arial, serif, 'Mont-Bold', Helvetica,
+    Arial, serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: capitalize;
+  color: #333333;
+}
+
+.learning_track {
+  width: 100vw;
+  height: 296px;
+  background: #6fa624;
+}
+.learning_track p#learning_track_id {
+  width: 306px;
+  height: 49px;
+  font-family: 'Mont-Bold', Helvetica, Arial, serif, 'Mont-Bold', Helvetica,
+    Arial, serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 49px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.learning_track .card {
+  background: red;
+}
+
+.learning_track_img {
+  position: relative !important;
+  top: -170px;
+}
+.learning_track_img .card-body {
+  padding-top: 0 !important;
+}
+.learning_track_img .card-body .card-title {
+  font-family: 'Mont-Bold', Helvetica, Arial, serif, 'Mont-Bold', Helvetica,
+    Arial, serif;
+  text-transform: capitalize;
+}
+.learning_track_img img.card-img-top {
+  border-top-left-radius: 16px !important;
+  border-top-right-radius: 16px !important;
+  height: 270px;
+}
+.learning_track_img .card {
+  background-color: #fff;
+  padding: 0;
+  border-radius: 16px;
+  height: 485px !important;
+}
+.learning_track_img .card .card-title {
+  margin-bottom: 10px !important;
+}
+.learning_track_img .enroll {
+  font-family: 'Mont', Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  height: 45px;
+  margin: 10px;
+  border-radius: 12px;
+  min-width: 140px;
+}
+
+.modal_width {
+  min-width: 43vw !important;
+}
+.modal_width .header_style.row {
+  margin: 0px 4px;
+  position: relative;
+  top: 0px;
+}
+.modal_width .modal-content {
+  border-radius: 1.357rem !important;
+}
+.modal_width .lerning_track_form {
+  font-family: 'Mont-Bold', Helvetica, Arial, serif, 'Mont-Bold', Helvetica,
+    Arial, serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+}
+.modal_width .lerning_track_form .label {
+  width: 49px;
+  height: 20px;
+  font-family: 'Mont-Bold', Helvetica, Arial, serif, 'Mont-Bold', Helvetica,
+    Arial, serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #333333 !important;
+}
+.modal_width .lerning_track_form .form_p {
+  font-family: 'Mont-Bold', Helvetica, Arial, serif, 'Mont-Bold', Helvetica,
+    Arial, serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+  opacity: 0.8;
+}
+.modal_width .lerning_track_form .btn-outline-primary {
+  border: 1px solid #5aa7d2 !important;
+  background-color: transparent;
+  color: #5aa7d2 !important;
+}
+.modal_width .modal-body .modal_msg p:nth-child(1) {
+  font-family: 'Mont-Bold', Helvetica, Arial, serif, 'Mont-Bold', Helvetica,
+    Arial, serif;
+  font-style: normal;
+  font-weight: 800 !important;
+  font-size: 24px;
+  line-height: 31px;
+  text-transform: capitalize;
+  color: #0077b9;
+}
+.modal_width td:nth-child(1) {
+  width: 20vw;
+  text-align: left;
+}
+.modal_width td:nth-child(2) {
+  width: 20vw;
+  text-align: end;
+}
+
+.learning_middle_sec1 .middle_sec2 .success_color {
+  padding: 16px 32px;
+  min-width: 145px;
+  width: auto;
+  height: 45px;
+  background: #6fa624;
+  border-radius: 10px;
+  color: #fff !important;
+}
+.learning_middle_sec1 .middle_sec2 .download {
+  box-sizing: border-box;
+  width: 220px;
+  height: 45px;
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.learning_info_sec .title {
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 15px;
+  padding: 30px;
+}
+.trainer_title {
+  margin-top: 2.5rem !important;
+}
+.learning_info_sec h3 {
+  font-family: Mont-Bold !important;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 32px;
+  text-transform: capitalize;
+  color: #333333;
+}
+.learning_info_sec ul.mylist li {
+  line-height: 2.5;
+}
+.learning_info_sec .right_sec p.user_title {
+  font-style: normal;
+  font-family: Mont-Bold !important;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 32px;
+  text-transform: capitalize;
+  color: #333333;
+  margin-left: 20px;
+  border-bottom: 1px solid #b1b1b1;
+}
+.learning_info_sec .right_sec .user_description {
+  font-family: 'Mont';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 17px;
+  text-transform: capitalize;
+  color: #333333;
+  margin-left: 30px;
+  padding-left: 10px;
+  border-left: 3px solid #9b034a;
+}
+.learning_info_sec .profile_img {
+  border-radius: 52px !important;
+  margin: 15px 22px;
+  width: 50px;
+}
+.learning_info_sec p.user_name {
+  font-family: 'Mont';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: capitalize;
+  color: #333333;
+}
+.learning_info_sec .user_details {
+  color: #9b034a;
+}
+.learning_info_sec .user_type,
+.learning_info_sec .user_details,
+.learning_info_sec .user_type_gray {
+  font-family: 'Mont' !important;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 11px;
+  line-height: 21px;
+  text-transform: capitalize;
+}
+
+.mt-1.sponser_align.col-9 {
+  position: relative;
+  left: -40px;
+  top: 5px;
+}
+
+.total_enrollmentwrapper {
+  margin-left: 32px;
+}
+.total_enrollmentwrapper p.Probability {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: capitalize;
+  color: #000000;
+}
+.total_enrollmentwrapper p.enrollment {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #333333;
+}
+.total_enrollmentwrapper p.total_enrollment {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  text-transform: capitalize;
+  color: #0077b9;
+} /*# sourceMappingURL=learning-track.css.map */
+

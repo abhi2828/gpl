@@ -1,0 +1,16 @@
+.learningTrack_card {
+  @media only screen and (max-width: 500px) {
+    padding: 0 !important;
+  }
+
+  &-btn {
+    @media only screen and (max-width: 500px) {
+      min-width: 100px !important;
+      line-height: 12px !important;
+    }
+  }
+}
+.bg_gray_color {
+  background-color: gray !important;
+  border-color: gray !important;
+}

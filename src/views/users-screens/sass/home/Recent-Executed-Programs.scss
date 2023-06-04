@@ -1,0 +1,188 @@
+@import '../mixin.scss';
+@import '../../../../@core/scss/base/bootstrap-extended/variables';
+@import '../base';
+
+.recent {
+  @include contentLayout;
+  width: 100vw;
+  grid-column: 1/-1;
+  align-content: start;
+  background-color: $color-godrej-blue;
+  color: $color-white !important;
+  padding: 3vw 3.5vw;
+  position: relative;
+  height: calc(55vh - 8px);
+  @media only screen and (max-width: 768px) {
+    padding-top: 2rem;
+  }
+
+  &_sec1 {
+    display: grid;
+    justify-items: center;
+    gap: 1.5vw;
+    padding-bottom: 2.3vw;
+    h1 {
+      color: $color-white;
+      font-family: $font-family-sans-serif-bold, $font-family-monospace-bold;
+      margin-bottom: 0;
+      font-size: 2.25vw;
+
+      @media only screen and (max-width: 600px) {
+        font-size: 5vw;
+      }
+    }
+
+    p {
+      font-size: 1.4vw;
+      @media only screen and (max-width: 600px) {
+        font-size: 3vw;
+      }
+    }
+
+    &-title1 {
+      color: $color-godrej-blue;
+    }
+
+    &-title2 {
+      color: $color-godrej-maroon;
+    }
+
+    p {
+      color: #fff;
+      font-size: 18px;
+    }
+  }
+
+  &_carousel {
+    width: 90vw;
+    padding: 0px 2.5rem;
+    @media only screen and (max-width: 768px) {
+      width: 85vw;
+      padding: 0px;
+    }
+  }
+
+  &_sec2 {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(240px, 1fr));
+    gap: 50px;
+
+    @media only screen and (max-width: 992px) {
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    }
+
+    @media only screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 0vw;
+      // padding: 0rem 2rem;
+    }
+  }
+
+  &_sec3 {
+    @media only screen and (max-width: 768px) {
+      color: $color-godrej-blue;
+    }
+  }
+}
+
+.recentBottom_view {
+  display: grid;
+  font-weight: 600;
+  font-size: 18px !important;
+  color: #0077b9;
+  padding-right: 40px;
+
+  @media only screen and (max-width: 768px) {
+    padding-right: 5vw;
+    padding-bottom: 10px;
+  }
+
+  p {
+    justify-self: end;
+    z-index: 10;
+    position: relative;
+    top: -18px;
+    cursor: pointer;
+
+    @media only screen and (max-width: 992px) {
+      font-size: 18px !important;
+      color: white;
+    }
+
+    @media only screen and (max-width: 600px) {
+      font-size: 14px !important;
+    }
+  }
+}
+.home_recent {
+  display: grid;
+  gap: 10px;
+  height: auto;
+  min-height: 280px;
+  width: 100%;
+  position: relative;
+  // background-color: $color-godrej-blue;
+  background: linear-gradient(to bottom, $color-godrej-blue 60%, #f8f8f8 40%);
+  padding-top: 3.5vw;
+
+  @media only screen and (max-width: 992px) {
+    background: $color-godrej-blue;
+  }
+
+  h1 {
+    color: $color-white;
+    font-family: $font-family-sans-serif-bold, $font-family-monospace-bold;
+    margin-bottom: 0;
+    // font-size: 38px;
+    padding-bottom: 2.3vw;
+    text-align: center;
+    font-size: calc(1.325rem + 0.9vw);
+
+    // @media only screen and (max-width: 600px) {
+    //   font-size: 5vw;
+    // }
+  }
+}
+.recentBottom {
+  height: auto;
+  width: 100%;
+  position: relative !important;
+  left: -8px;
+  @media only screen and (max-width: 900px) {
+    left: 0px;
+  }
+  // top: 136px;
+  // margin-bottom: 160px;
+}
+.rec_top {
+  background-color: #0077b9;
+  color: #fff;
+  text-align: center;
+  height: 300px;
+  position: absolute;
+  width: inherit;
+  p {
+    color: #fff;
+    font-size: 18px;
+  }
+  h1 {
+    color: $color-white;
+    font-family: $font-family-sans-serif-bold, $font-family-monospace-bold;
+    margin-bottom: 0;
+    // font-size: 38px;
+    font-size: calc(1.325rem + 0.9vw);
+
+    // @media only screen and (max-width: 600px) {
+    //   font-size: 5vw;
+    // }
+  }
+}
+
+.recentBottom .carousel .control-dots {
+  text-align: left !important;
+  left: 2.5rem;
+}
+
+.recentBottom .control-arrow {
+  display: none !important;
+}

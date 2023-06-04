@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  frontend:
+    restart: always
+    build:
+      context: .
+      args:
+        - ACTIVE_PROFILE=${DEPLOY_ENV}
+    image: 'roshanbnimap/gpl-alchemy:frontend-${DEPLOY_ENV}'
+    container_name: 'gpl-alchemy-frontend-${DEPLOY_ENV}'
+    ports:
+      - 9511:80
+    volumes:
+      - gpl-alchemy-nginx-logs:/gpl-alchemy/logs/
+
+volumes:
+  gpl-alchemy-nginx-logs:

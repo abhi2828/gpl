@@ -1,0 +1,45 @@
+@import './base';
+
+.menubar {
+  box-shadow: 0 8px 25px -8px #82868b;
+  position: fixed;
+  top: 10vw;
+  right: 0;
+  grid-column: 2/-1;
+  grid-row: 2/-1;
+  display: grid;
+  gap: 5px;
+  background-color: white;
+  color: black !important;
+  padding: 15px;
+  width: 150px;
+  // border-radius: 1px;
+
+  &_outer {
+    height: 200vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 100000;
+  }
+
+  a {
+    color: black;
+    font-size: 14px;
+    line-height: 2;
+  }
+
+  &_link {
+    padding: 2px 0px;
+    &:hover {
+      color: $color-godrej-green !important;
+    }
+
+    &-active {
+      color: $color-godrej-green !important;
+    }
+  }
+
+  @media only screen and (min-width: 801px) {
+    display: none;
+  }
+}

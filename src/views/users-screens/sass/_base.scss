@@ -1,0 +1,24 @@
+//color variables
+$color-primary: black;
+$color-white: #fff;
+$color-gray-dark: #686868;
+$color-gray-light: #898989;
+$color-godrej-green: #6fa624;
+$color-godrej-blue: #0077b9;
+$color-godrej-maroon: #9b034a;
+
+// p {
+//   margin-bottom: 0;
+// }
+
+.thumbs-wrapper {
+  display: none !important;
+}
+
+.carousel .carousel-dots .slick-active {
+  background-color: $color-godrej-blue;
+}
+
+.carousel .carousel-dots {
+  border-color: $color-godrej-blue;
+}

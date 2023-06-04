@@ -1,0 +1,155 @@
+@font-face {
+  font-family: Mont;
+  src: url(../../../../assets/fonts/Mont-Regular.otf);
+}
+@font-face {
+  font-family: Mont-Bold;
+  src: url(../../../../assets/fonts/Mont-Bold.otf);
+}
+p {
+  margin-bottom: 0;
+}
+
+.thumbs-wrapper {
+  display: none !important;
+}
+
+.carousel .carousel-dots .slick-active {
+  background-color: #0077b9;
+}
+
+.carousel .carousel-dots {
+  border-color: #0077b9;
+}
+
+.recent {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  width: 100vw;
+  grid-column: 1/-1;
+  align-content: start;
+  background-color: #0077b9;
+  color: #fff !important;
+  padding: 3vw 3.5vw;
+  height: 340px;
+}
+@media only screen and (max-width: 768px) {
+  .recent {
+    padding-top: 2rem;
+  }
+}
+.recent_sec1 {
+  display: grid;
+  justify-items: center;
+  gap: 1.5vw;
+  padding-bottom: 2.3vw;
+}
+.recent_sec1 h1 {
+  color: #fff;
+  font-family: 'Mont-Bold', Helvetica, Arial, serif, 'Mont-Bold', Helvetica,
+    Arial, serif;
+  margin-bottom: 0;
+  font-size: 2.25vw;
+}
+@media only screen and (max-width: 600px) {
+  .recent_sec1 h1 {
+    font-size: 5vw;
+  }
+}
+.recent_sec1 p {
+  font-size: 1.4vw;
+}
+@media only screen and (max-width: 600px) {
+  .recent_sec1 p {
+    font-size: 3vw;
+  }
+}
+.recent_sec1-title1 {
+  color: #0077b9;
+}
+.recent_sec1-title2 {
+  color: #9b034a;
+}
+.recent_sec1 p {
+  color: #fff;
+  font-size: 18px;
+}
+.recent_carousel {
+  width: 90vw;
+  padding: 0px 2.5rem;
+}
+@media only screen and (max-width: 768px) {
+  .recent_carousel {
+    width: 85vw;
+    padding: 0px;
+  }
+}
+.recent_sec2 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(240px, 1fr)) !important;
+  gap: 50px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .recent_sec2 {
+    grid-template-columns: repeat(3, minmax(240px, 1fr));
+  }
+}
+@media only screen and (max-width: 992px) {
+  .recent_sec2 {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  }
+}
+@media only screen and (max-width: 768px) {
+  .recent_sec2 {
+    grid-template-columns: 1fr;
+    gap: 0vw;
+  }
+}
+.recent_sec3 {
+  display: grid;
+  justify-content: end;
+  color: #0077b9;
+  font-size: 18px;
+  text-transform: uppercase;
+  position: relative;
+  top: -21px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  .recent_sec3 {
+    color: #0077b9;
+  }
+}
+.recent_sec3 p {
+  margin-bottom: 0;
+  color: #0077b9 !important;
+}
+
+.recent_carousel {
+  position: relative !important;
+}
+
+.recent_carousel ul.control-dots {
+  left: -624px;
+  position: absolute;
+  z-index: 999999999999999;
+  bottom: -12px;
+}
+
+.recent_wrapper .recent_wrapper {
+  position: relative;
+  top: -30px;
+}
+
+.recent_wrapper {
+  position: relative;
+  top: -150px;
+}
+
+.recent_bottom {
+  position: relative;
+} /*# sourceMappingURL=Recent-Executed-Programs.css.map */

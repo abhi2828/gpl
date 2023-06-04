@@ -1,0 +1,126 @@
+p {
+  margin-bottom: 0;
+}
+
+.thumbs-wrapper {
+  display: none !important;
+}
+
+.carousel .carousel-dots .slick-active {
+  background-color: #0077b9;
+}
+
+.carousel .carousel-dots {
+  border-color: #0077b9;
+}
+
+@font-face {
+  font-family: Mont;
+  src: url(../../../../assets/fonts/Mont-Regular.otf);
+}
+@font-face {
+  font-family: Mont-Bold;
+  src: url(../../../../assets/fonts/Mont-Bold.otf);
+}
+.upcoming {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  width: 100vw;
+  grid-column: 1/2;
+  align-content: start;
+  gap: 10px;
+  background-color: #f8f8f8 !important;
+}
+.upcoming_sec1 {
+  display: grid;
+  justify-items: center;
+  color: #fff;
+  gap: 1.5vw;
+  padding-bottom: 2.3vw;
+}
+.upcoming_sec1 h1 {
+  color: #6fa624;
+  font-family: 'Mont-Bold', Helvetica, Arial, serif, 'Mont-Bold', Helvetica,
+    Arial, serif;
+  margin-bottom: 0;
+  font-size: 2.25vw;
+}
+@media only screen and (max-width: 600px) {
+  .upcoming_sec1 h1 {
+    font-size: 5vw;
+  }
+}
+.upcoming_sec1 p {
+  font-family: 'Mont';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 16px;
+  text-align: center;
+  color: #686868;
+}
+@media only screen and (max-width: 600px) {
+  .upcoming_sec1 p {
+    font-size: 3vw;
+  }
+}
+.upcoming_carousel {
+  width: 100vw;
+  padding: 0px 2.5rem;
+}
+@media only screen and (max-width: 768px) {
+  .upcoming_carousel {
+    width: 85vw;
+    padding: 0px;
+  }
+}
+.upcoming_sec2 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(96px, 1fr));
+  gap: 3.6vw;
+}
+@media only screen and (max-width: 992px) {
+  .upcoming_sec2 {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  }
+}
+@media only screen and (max-width: 768px) {
+  .upcoming_sec2 {
+    grid-template-columns: 1fr;
+    gap: 0vw;
+  }
+}
+.upcoming_sec2 h5 {
+  text-align: left;
+}
+.upcoming_sec2 p {
+  text-align: left;
+}
+@media only screen and (max-width: 500px) {
+  .upcoming_sec2 p {
+    font-size: 2.5vw;
+  }
+}
+
+.upcoming_carousel {
+  position: relative !important;
+}
+
+.upcoming_carousel ul.control-dots {
+  position: absolute;
+  left: -687px;
+  position: absolute;
+  z-index: 999999999999999;
+  bottom: -12px;
+}
+
+.upcoming_sec1_title1 {
+  color: #0077b9;
+}
+
+.upcoming_sec1_title2 {
+  color: #9b034a;
+} /*# sourceMappingURL=Upcoming-Programs.css.map */

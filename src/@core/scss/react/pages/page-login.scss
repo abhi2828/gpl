@@ -1,0 +1,21 @@
+@import '../../base/bootstrap-extended/variables';
+
+.title {
+  font-weight: bold;
+  font-family: $font-family-sans-serif-bold, $font-family-monospace-bold;
+  color: black;
+  &-1 {
+    color: black;
+  }
+  &-g {
+    color: #6fa624;
+  }
+
+  &-p {
+    color: #0077b9;
+  }
+
+  &-l {
+    color: #9b034a;
+  }
+}

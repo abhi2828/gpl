@@ -1,0 +1,200 @@
+@import '../../../../@core/scss/base/bootstrap-extended/variables';
+.performance {
+  width: 100%;
+  // padding-bottom: 3rem;
+
+  h1 {
+    color: black;
+    font-size: 20px !important;
+    font-family: $font-family-sans-serif-bold, $font-family-monospace-bold;
+    @media only screen and (max-width: 501px) {
+      font-size: 22px;
+    }
+  }
+
+  &_star {
+    padding-left: 3.5rem;
+
+    @media only screen and (max-width: 1084px) {
+      padding-left: 2.5rem;
+    }
+  }
+}
+
+// .idPHNo {
+//   font-size: 16px !important;
+//   color: #2e2c2c !important;
+//   font-family: $font-family-sans-serif-bold, $font-family-monospace-bold;
+// }
+
+.kgEPYv {
+  font-size: 16px !important;
+}
+
+.performance > .react-dataTable {
+  width: 100%;
+  overflow: auto;
+
+  @media only screen and (max-width: 1085px) {
+    // width: 84vw;
+    overflow: auto;
+  }
+
+  @media only screen and (max-width: 992px) {
+    // width: 82vw;
+    overflow: auto;
+  }
+
+  @media only screen and (max-width: 880px) {
+    // width: 80vw;
+    overflow: auto;
+  }
+
+  @media only screen and (max-width: 800px) {
+    // width: 78vw;
+    overflow: auto;
+  }
+
+  @media only screen and (max-width: 700px) {
+    // width: 76vw;
+    overflow: auto;
+  }
+
+  @media only screen and (max-width: 650px) {
+    // width: 74vw;
+    overflow: auto;
+  }
+
+  @media only screen and (max-width: 600px) {
+    // width: 86vw;
+    overflow: auto;
+  }
+
+  @media only screen and (max-width: 550px) {
+    // width: 86vw;
+    overflow: auto;
+  }
+}
+
+.headerTitle {
+  font-size: 16px !important;
+  color: #2e2c2c !important;
+  font-family: $font-family-sans-serif-bold, $font-family-monospace-bold;
+  @media only screen and (max-width: 900px) {
+    font-size: 14px !important;
+  }
+  @media only screen and (max-width: 800px) {
+    font-size: 12px !important;
+  }
+  @media only screen and (max-width: 700px) {
+    font-size: 11px !important;
+  }
+  @media only screen and (max-width: 600px) {
+    font-size: 10.6px !important;
+  }
+  @media only screen and (max-width: 501px) {
+    font-size: 10.5px !important;
+  }
+
+  &-span {
+    width: 100px;
+  }
+}
+
+.performance .kzlKWl {
+  justify-content: start !important;
+}
+// .performance > .idPHNo {
+//   font-size: 16px !important;
+//   color: #2e2c2c !important;
+//   font-family: $font-family-sans-serif-bold, $font-family-monospace-bold;
+//   @media only screen and (max-width: 501px) {
+//     font-size: 13px !important;
+//   }
+// }
+
+// .bZtlLv {
+//   font-size: 16px !important;
+//   color: #2e2c2c !important;
+//   font-family: $font-family-sans-serif-bold, $font-family-monospace-bold;
+//   @media only screen and (max-width: 501px) {
+//     font-size: 13px !important;
+//   }
+// }
+
+.performance .dFsTSm {
+  font-size: 16px !important;
+  color: #2e2c2c !important;
+  font-family: $font-family-sans-serif-bold, $font-family-monospace-bold;
+  @media only screen and (max-width: 501px) {
+    font-size: 13px !important;
+  }
+}
+
+.performance .jeTwmN {
+  font-size: 16px !important;
+  color: #2e2c2c !important;
+  font-family: $font-family-sans-serif-bold, $font-family-monospace-bold;
+  @media only screen and (max-width: 501px) {
+    font-size: 13px !important;
+  }
+}
+
+.kgEPYv {
+  font-size: 16px !important;
+  @media only screen and (max-width: 900px) {
+    font-size: 14px !important;
+  }
+  @media only screen and (max-width: 800px) {
+    font-size: 13px !important;
+  }
+  @media only screen and (max-width: 700px) {
+    font-size: 12px !important;
+  }
+  @media only screen and (max-width: 600px) {
+    font-size: 11px !important;
+  }
+  @media only screen and (max-width: 501px) {
+    font-size: 10.5px !important;
+  }
+}
+
+.sub_track_btn_enable {
+  color: rgb(0, 119, 185) !important;
+  font-size: 16px;
+  padding: 0 6px;
+  @media only screen and (max-width: 900px) {
+    font-size: 14px !important;
+  }
+  @media only screen and (max-width: 800px) {
+    font-size: 13px !important;
+  }
+  @media only screen and (max-width: 700px) {
+    font-size: 12px !important;
+  }
+  @media only screen and (max-width: 600px) {
+    font-size: 11px !important;
+  }
+  @media only screen and (max-width: 501px) {
+    font-size: 10.5px !important;
+  }
+}
+.sub_track_btn_enable :hover {
+  // color: #6fa624 !important;
+  color: rgb(4, 75, 113) !important;
+}
+.sub_track_btn_disable {
+  padding: 0 6px;
+  font-size: 16px;
+  cursor: default !important;
+  color: #6e6b7b !important;
+}
+
+.react-pdf__Page__canvas {
+  height: 100% !important;
+  width: 100% !important;
+
+  @media only screen and (max-width: 600px) {
+    height: 55% !important;
+  }
+}

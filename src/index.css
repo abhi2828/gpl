@@ -1,0 +1,68 @@
+.description {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.info-container {
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  padding: 16px 8px;
+}
+
+.clip {
+  padding: 2px;
+}
+
+.fu-url {
+  padding: 7px;
+}
+
+.addBanner {
+  white-space: nowrap;
+}
+
+.chro {
+  width: 150px;
+  height: 150px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.chroAdmin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.acceptCA {
+  margin: 0%;
+}
+
+.footerChro {
+  font-family: 'Mont-Bold';
+  font-size: large;
+  position: absolute;
+  /* bottom: 10px; */
+  right: 0;
+}
+
+.chro1 {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+.chro_para1 {
+  font-family: 'Mont-Bold';
+  font-size: large;
+  text-align: center;
+  margin: 5px 0px;
+}
+
+.chromsg {
+  position: relative;
+  width: 100%;
+}

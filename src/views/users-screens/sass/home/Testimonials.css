@@ -1,0 +1,179 @@
+@font-face {
+  font-family: Mont;
+  src: url(../../../../assets/fonts/Mont-Regular.otf);
+}
+@font-face {
+  font-family: Mont-Bold;
+  src: url(../../../../assets/fonts/Mont-Bold.otf);
+}
+p {
+  margin-bottom: 0;
+}
+
+.thumbs-wrapper {
+  display: none !important;
+}
+
+.carousel .carousel-dots .slick-active {
+  background-color: #0077b9;
+}
+
+.carousel .carousel-dots {
+  border-color: #0077b9;
+}
+
+.testimonials {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  width: 100vw;
+  min-height: 250px;
+  max-height: 1fr;
+  grid-column: 1/-1;
+  align-content: start !important;
+  background: linear-gradient(to bottom, #6fa624 60%, #f8f8f8 40%);
+  position: relative !important;
+}
+.testimonials .testimonial_details {
+  text-align: justify;
+  font-style: italic;
+}
+.testimonials .testimonials_carousel {
+  position: relative !important;
+}
+.testimonials .testimonials_carousel .carousel .control-dots {
+  margin: 10px 0;
+  padding: 0;
+  text-align: center;
+  left: -687px !important;
+  position: absolute;
+  z-index: 999999999999999;
+  bottom: -12px;
+}
+@media only screen and (max-width: 992px) {
+  .testimonials {
+    background: linear-gradient(to bottom, #6fa624 100%, #fff 0%);
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .testimonials {
+    background: linear-gradient(to bottom, #6fa624 100%, #fff 0%);
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+}
+.testimonials_sec1 {
+  display: grid;
+  justify-items: center;
+  color: #fff;
+  grid-gap: 1.5vw;
+  gap: 1.5vw;
+  margin-top: 30px;
+}
+.testimonials_sec1 p:nth-child(1) {
+  color: #fff;
+  font-family: 'Mont-Bold', Helvetica, Arial, serif, 'Mont-Bold', Helvetica,
+    Arial, serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 49px;
+  text-transform: capitalize;
+}
+@media only screen and (max-width: 600px) {
+  .testimonials_sec1 p:nth-child(1) {
+    font-size: 5vw;
+  }
+}
+.testimonials_sec1 p {
+  font-family: 'Mont';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 13px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+@media only screen and (max-width: 600px) {
+  .testimonials_sec1 p {
+    font-size: 3vw;
+  }
+}
+.testimonials_carousel {
+  width: 100vw;
+  padding: 0px 2.5rem;
+}
+@media only screen and (max-width: 768px) {
+  .testimonials_carousel {
+    width: 92vw;
+    padding: 0px 0px;
+  }
+}
+.testimonials_sec2 {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(3, minmax(78px, 1fr));
+  gap: 3vw;
+}
+.testimonials_sec2 .cardDetail {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  margin-bottom: 3rem !important;
+}
+@media only screen and (max-width: 992px) {
+  .testimonials_sec2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .testimonials_sec2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0rem 2rem;
+  }
+}
+.testimonials_sec3 {
+  position: relative;
+  display: grid;
+  justify-content: end;
+  color: #0077b9;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding-right: 2.5rem;
+}
+.testimonials_sec3 p {
+  margin-bottom: 0;
+  font-family: 'Mont';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px !important;
+  line-height: 23px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #0077b9;
+  position: absolute;
+  right: 48px;
+  top: -19px;
+}
+@media only screen and (max-width: 992px) {
+  .testimonials_sec3 p {
+    color: #fff;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .testimonials_sec3 p {
+    font-size: 3vw;
+  }
+}
+
+.carousel .carousel-status {
+  right: 35px !important;
+} /*# sourceMappingURL=Testimonials.css.map */

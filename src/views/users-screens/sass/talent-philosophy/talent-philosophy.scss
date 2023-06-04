@@ -1,0 +1,125 @@
+.talentPhilosophy {
+  display: grid;
+  justify-content: center;
+  gap: 3.5rem;
+  padding: 4.5vw;
+  width: 100%;
+  grid-template-columns: 1fr;
+  // justify-content: center;
+  @media only screen and (max-width: 601px) {
+    justify-content: center;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  @media only screen and (max-width: 405px) {
+    display: block;
+  }
+}
+
+.iframe {
+  height: 890px;
+  width: 100%;
+  @media only screen and (max-width: 1400px) {
+    height: 850px;
+  }
+  @media only screen and (max-width: 1300px) {
+    height: 805px;
+  }
+  @media only screen and (max-width: 1200px) {
+    height: 750px;
+  }
+  @media only screen and (max-width: 1100px) {
+    height: 700px;
+  }
+  @media only screen and (max-width: 1000px) {
+    height: 620px;
+  }
+  @media only screen and (max-width: 900px) {
+    height: 550px;
+  }
+  @media only screen and (max-width: 800px) {
+    height: 480px;
+  }
+  @media only screen and (max-width: 700px) {
+    height: 420px;
+  }
+  @media only screen and (max-width: 600px) {
+    height: 350px;
+  }
+  @media only screen and (max-width: 500px) {
+    height: 300px;
+  }
+  @media only screen and (max-width: 400px) {
+    height: 250px;
+  }
+}
+
+.downloadBtn {
+  &:hover {
+    box-shadow: 0 8px 25px -8px #82868b;
+  }
+}
+// .btn-secondary {
+//   background-color: #9b034a !important;
+// }
+
+.hr_sec1 {
+  img {
+    width: inherit;
+  }
+}
+
+.all-page-container {
+  height: 100vh;
+  margin: inherit;
+}
+
+span #title {
+  display: none !important;
+}
+
+.humanResource {
+  display: grid;
+  grid-template-rows: 135px 135px 1fr;
+  grid-template-columns: 1fr;
+  height: max-content;
+}
+
+.humanResource .bg_for_career_pdf {
+  grid-row: 1/3;
+  grid-column: 1/-1;
+}
+
+.humanResource .pdf_wrapper {
+  display: grid;
+  grid-row: 2/-1;
+  grid-column: 1/-1;
+  // justify-content: center;
+  // justify-items: center;
+  width: 100%;
+  padding: 0px 3rem 3rem;
+  @media only screen and (max-width: 450px) {
+    padding: 0px 1rem 1rem !important;
+  }
+}
+
+.pdf_wrapper .pdf-viewer-container {
+  width: 100% !important;
+  padding: 0px 2rem !important;
+  bottom: 0 !important;
+  @media only screen and (max-width: 450px) {
+    padding: 0px 1rem !important;
+  }
+}
+
+.pdf_wrapper .pdf-viewer-wrapper {
+  padding-top: 40px !important;
+  gap: 20px !important;
+  height: min-content !important;
+}
+
+.pdf_wrapper .react-pdf__Document {
+  overflow: auto;
+  width: 100%;
+}

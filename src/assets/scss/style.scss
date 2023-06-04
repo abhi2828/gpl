@@ -1,0 +1,50 @@
+/*================================================================================
+	Item Name: GPL - Vuejs, HTML & Laravel Admin Dashboard Template
+	Version: 2.0
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+[data-column-id='name'].rdt_TableCol > .rdt_TableCol_Sortable {
+  font-weight: 900 !important;
+}
+
+// .textoverflow {
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   white-space: nowrap;
+//   //width: 1000px;
+// }
+
+.err_msg {
+  width: 100%;
+  font-size: 0.857rem;
+  color: #ea5455;
+}
+
+.table_row {
+  min-width: 100px !important;
+  height: 30px !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+.tooltip-inner {
+  // min-width: 400px;
+  background-color: #4e5154;
+}
+
+.table_row1 {
+  min-width: 100px !important;
+  width: 600px !important;
+  height: 30px !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}

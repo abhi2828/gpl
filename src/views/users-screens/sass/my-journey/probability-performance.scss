@@ -1,0 +1,65 @@
+@import '../base';
+@import '../mixin.scss';
+@import '../../../../@core/scss/base/bootstrap-extended/variables';
+
+.probabilityPerformance {
+  @include componentLayout;
+  background-color: inherit !important;
+  padding: 0;
+  grid-template-columns: 1fr;
+  gap: 10px !important;
+  // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  // @media only screen and (max-width: 700px) {
+  //   padding: 6px !important;
+  // }
+
+  &_sec {
+    width: 100%;
+    overflow-y: auto;
+    border-radius: 10px;
+    // border: 2px solid gray;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 5px;
+      height: 100%;
+      background-color: $color-godrej-green;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 100;
+    }
+  }
+
+  h1 {
+    font-size: 26px;
+    color: black;
+    font-family: $font-family-sans-serif-bold, $font-family-monospace-bold;
+
+    @media only screen and (max-width: 501px) {
+      font-size: 18px;
+    }
+  }
+
+  &_arrow {
+    // border: 2px solid gray;
+    // border-radius: 9px;
+    color: gray;
+    // box-shadow: 0 8px 25px -8px #82868b;
+    padding: 8px;
+
+    @media only screen and (max-width: 801px) {
+      height: 40px;
+      width: 40px;
+    }
+
+    @media only screen and (max-width: 501px) {
+      height: 35px;
+      width: 35px;
+      padding: 4px;
+    }
+  }
+}

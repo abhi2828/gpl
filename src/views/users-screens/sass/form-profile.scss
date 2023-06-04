@@ -1,0 +1,79 @@
+@import '../../../@core/scss/base/bootstrap-extended/variables';
+@import '../sass/base';
+.programForm {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  gap: 20px;
+  padding: 40px;
+  border-radius: 20px !important;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    top: -2px;
+    left: 0;
+    height: 10px;
+    width: 100%;
+    background: linear-gradient(
+      to right,
+      $color-godrej-green 33.33%,
+      $color-godrej-blue 33.33%,
+      $color-godrej-maroon 33.33%
+    );
+  }
+  h4 {
+    font-size: 24px;
+    color: $color-primary;
+    font-family: $font-family-sans-serif-bold, $font-family-monospace-bold;
+  }
+
+  &_div {
+    display: grid;
+    justify-items: center;
+    gap: 10px;
+
+    &-img {
+      height: 120px;
+      width: 120px;
+      border-radius: 50%;
+    }
+
+    h5 {
+      font-size: 20px;
+      color: $color-primary;
+    }
+
+    p {
+      font-size: 18px;
+      color: #333333;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  &_close {
+    height: 52px;
+    width: 110px;
+    color: $color-godrej-blue;
+    background-color: white;
+    border: 1px solid $color-godrej-blue;
+    border-radius: 12px;
+    font-size: 16px;
+  }
+}
+
+.modal .modal-content {
+  border-radius: 20px;
+}
+
+.modal-body {
+  padding: 0;
+}

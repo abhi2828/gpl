@@ -1,0 +1,260 @@
+@import '../../../@core/scss/base/bootstrap-extended/variables';
+@import './base';
+
+.userFooter {
+  grid-column: 1/-1;
+  grid-row: 3/4;
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 0;
+  position: relative;
+  // left: -7px;
+  @media only screen and (max-width: 900px) {
+    left: 0px;
+  }
+
+  &_sec1 {
+    display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    gap: 120px;
+    padding: 20px 4.9vw 20px 4.5vw;
+
+    @media only screen and (max-width: 1540px) {
+      gap: 50px;
+    }
+
+    @media only screen and (max-width: 1440px) {
+      gap: 30px;
+    }
+
+    @media only screen and (max-width: 1260px) {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    @media only screen and (max-width: 1020px) {
+      grid-template-columns: 1fr;
+    }
+
+    &-1 {
+      height: 100%;
+      display: grid;
+      grid-template-columns: 200px 1fr;
+
+      @media only screen and (max-width: 1340px) {
+        grid-template-columns: 170px 1fr;
+      }
+
+      @media only screen and (max-width: 1260px) {
+        grid-template-columns: 230px 1fr;
+      }
+
+      @media only screen and (max-width: 870px) {
+        grid-template-columns: 200px 1fr;
+      }
+      @media only screen and (max-width: 750px) {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    h3 {
+      margin-bottom: 0;
+      padding-bottom: 10px;
+      color: white;
+      font-size: 13px;
+      font-family: $font-family-sans-serif-bold, $font-family-monospace-bold;
+
+      @media only screen and (max-width: 1425px) {
+        font-size: 13px;
+      }
+
+      @media only screen and (max-width: 1260px) {
+        font-size: 16px;
+      }
+
+      @media only screen and (max-width: 870px) {
+        font-size: 14px !important;
+      }
+
+      @media only screen and (max-width: 501px) {
+        font-size: 15px !important;
+      }
+    }
+
+    a {
+      color: white;
+      font-size: 11px;
+
+      @media only screen and (max-width: 1425px) {
+        font-size: 11px;
+      }
+
+      @media only screen and (max-width: 1260px) {
+        font-size: 14px;
+      }
+
+      @media only screen and (max-width: 870px) {
+        font-size: 12px !important;
+      }
+
+      @media only screen and (max-width: 501px) {
+        font-size: 13px !important;
+      }
+    }
+
+    &-link:hover {
+      color: $color-godrej-green !important;
+    }
+
+    &-first {
+      display: grid;
+      grid-auto-flow: column;
+
+      &-div1 {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: repeat(4, minmax(100px, 1fr));
+        gap: 10px;
+
+        @media only screen and (max-width: 750px) {
+          grid-template-columns: 1fr;
+          grid-auto-flow: row;
+          padding-bottom: 30px;
+        }
+
+        a {
+          color: white;
+        }
+
+        &-link {
+          width: 80px !important;
+          word-wrap: break-word;
+
+          @media only screen and (max-width: 750px) {
+            width: 180px !important;
+          }
+        }
+        &-link:hover {
+          color: $color-godrej-green !important;
+        }
+      }
+
+      &-div2 {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 10px;
+        grid-template-columns: repeat(4, minmax(100px, 1fr));
+
+        @media only screen and (max-width: 750px) {
+          grid-template-columns: 1fr;
+          grid-auto-flow: row;
+          padding-bottom: 10px;
+        }
+
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+
+  &_sec2 {
+    display: grid;
+    align-self: start;
+    grid-template-columns: 200px 1fr;
+
+    @media only screen and (max-width: 1340px) {
+      grid-template-columns: 170px 1fr;
+    }
+
+    @media only screen and (max-width: 1260px) {
+      grid-template-columns: 230px 1fr;
+    }
+
+    @media only screen and (max-width: 870px) {
+      grid-template-columns: 200px 1fr;
+    }
+
+    @media only screen and (max-width: 750px) {
+      grid-template-columns: 1fr;
+    }
+
+    a {
+      color: white;
+    }
+
+    &-links {
+      :hover {
+        color: $color-godrej-green;
+      }
+    }
+  }
+
+  &_sec3 {
+    align-self: start;
+    display: grid;
+    grid-template-rows: 40px;
+    height: 100%;
+
+    span {
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-columns: 30px;
+      font-size: 13px;
+      cursor: pointer;
+      // padding-top: 7px;
+      justify-self: end;
+
+      @media only screen and (max-width: 1260px) {
+        justify-self: start;
+        align-self: center;
+        font-size: 16px;
+      }
+
+      @media only screen and (max-width: 870px) {
+        font-size: 14px !important;
+      }
+
+      &:hover {
+        color: $color-godrej-green;
+      }
+
+      @media only screen and (max-width: 501px) {
+        font-size: 13px !important;
+      }
+    }
+
+    &-last {
+      justify-self: end;
+      // align-self: end;
+      display: grid;
+      justify-self: end;
+
+      @media only screen and (max-width: 1400px) {
+        justify-self: end;
+      }
+
+      @media only screen and (max-width: 768px) {
+        justify-self: start;
+      }
+
+      &-img {
+        height: 43px;
+
+        @media only screen and (max-width: 501px) {
+          height: 38px;
+        }
+      }
+    }
+  }
+
+  &_sec4 {
+    height: 100%;
+    display: grid;
+  }
+}

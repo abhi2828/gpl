@@ -1,0 +1,140 @@
+@font-face {
+  font-family: Mont;
+  src: url(../../../../assets/fonts/Mont-Regular.otf);
+}
+@font-face {
+  font-family: Mont-Bold;
+  src: url(../../../../assets/fonts/Mont-Bold.otf);
+}
+p {
+  margin-bottom: 0;
+}
+
+.thumbs-wrapper {
+  display: none !important;
+}
+
+.carousel .carousel-dots .slick-active {
+  background-color: #0077b9;
+}
+
+.carousel .carousel-dots {
+  border-color: #0077b9;
+}
+
+.banner {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  grid-row: 1/5;
+  grid-column: 1/2;
+  background-color: #d9ecfb;
+}
+.banner_sec {
+  display: flex;
+  height: 35vw;
+  grid-auto-flow: column;
+}
+.banner_sec-1 {
+  display: grid;
+  justify-content: start;
+  justify-items: start;
+  align-content: center;
+  padding: 0rem 10rem;
+  color: #255275;
+}
+@media only screen and (max-width: 850px) {
+  .banner_sec-1 {
+    padding: 0rem 5rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .banner_sec-1 {
+    padding: 0rem 3rem;
+  }
+}
+.banner_sec-1 h1 {
+  text-align: start;
+  color: #255275;
+  font-family: 'Mont-Bold', Helvetica, Arial, serif, 'Mont-Bold', Helvetica,
+    Arial, serif;
+}
+@media only screen and (max-width: 850px) {
+  .banner_sec-1 h1 {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .banner_sec-1 h1 {
+    font-size: 1.2rem;
+  }
+}
+.banner_sec-1 h4 {
+  font-style: italic;
+  color: #255275;
+}
+@media only screen and (max-width: 850px) {
+  .banner_sec-1 h4 {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .banner_sec-1 h4 {
+    font-size: 0.9rem;
+  }
+}
+.banner_sec-1 p {
+  font-style: italic;
+  padding-left: 10px;
+}
+@media only screen and (max-width: 850px) {
+  .banner_sec-1 p {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .banner_sec-1 p {
+    font-size: 0.9rem;
+  }
+}
+.banner_sec-2 {
+  height: 100%;
+  width: 100%;
+  /* height: 514px; */
+}
+.banner_sec-2-img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.banner_sec-2-video {
+  display: grid;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.img_wraper_top {
+  position: revert;
+}
+.img_wraper_top img {
+  position: absolute;
+  left: 106px;
+  top: 50px;
+  z-index: 99999;
+  height: 100px;
+  width: 90px;
+}
+
+.img_wraper_bottom {
+  position: revert;
+}
+
+.img_wraper_bottom img {
+  position: absolute;
+  right: 100px;
+  top: 34rem;
+  z-index: 99999;
+}

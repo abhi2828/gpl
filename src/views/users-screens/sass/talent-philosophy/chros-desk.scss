@@ -1,0 +1,276 @@
+@import '../../../../@core/scss/base/bootstrap-extended/variables';
+@import '../base';
+@import '../mixin.scss';
+
+.profile-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  background-color: #ccc;
+  font-size: 46px;
+  font-weight: bold;
+  color: #9b9595;
+
+  @media only screen and (max-width: 501px) {
+    width: 125px;
+    height: 125px;
+  }
+}
+
+.chrosDesk {
+  @include componentLayout;
+  color: $color-gray-dark;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  &_sec11 {
+    width: 150px;
+    justify-content: center;
+    &-img1 {
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+    }
+  }
+
+  @media only screen and (max-width: 401px) {
+    margin-bottom: 1.5rem;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-family: $font-family-sans-serif-bold, $font-family-monospace-bold;
+
+    @media only screen and (max-width: 501px) {
+      font-size: 20px;
+    }
+  }
+
+  p {
+    font-size: 13px;
+    line-height: 28px;
+  }
+
+  &_sec1 {
+    width: 100%;
+    height: 350px;
+
+    @media only screen and (max-width: 992px) {
+      height: 35vw;
+    }
+
+    @media only screen and (max-width: 600px) {
+      height: 80vw;
+    }
+
+    &-img {
+      height: 100%;
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+  &_sec {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 150px 1fr;
+    gap: 50px;
+    width: 100%;
+    h5 {
+      color: #333333 !important;
+      font-family: $font-family-sans-serif-bold, $font-family-monospace-bold;
+
+      // @media only screen and (max-width: 501px) {
+      //   font-size: 15px !important;
+      // }
+    }
+
+    @media only screen and (max-width: 992px) {
+      grid-template-rows: min-content 1fr;
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    &-div {
+      display: grid;
+      gap: 20px;
+      justify-items: center;
+      grid-template-rows: 140px;
+
+      @media only screen and (max-width: 992px) {
+        grid-auto-flow: column;
+        grid-template-columns: 150px 1fr;
+        align-items: center;
+        justify-items: start;
+        gap: 10px;
+      }
+
+      h5 {
+        font-family: $font-family-sans-serif-bold, $font-family-monospace-bold;
+        font-size: 20px;
+        color: #333333;
+        width: 100%;
+        text-align: center;
+
+        @media only screen and (max-width: 992px) {
+          text-align: start;
+        }
+
+        @media only screen and (max-width: 501px) {
+          font-size: 16px;
+        }
+      }
+
+      &-img {
+        height: 140px;
+        width: 140px;
+        border-radius: 50%;
+      }
+    }
+
+    &-div2 {
+      display: grid;
+      // grid-gap: 10px;
+      // gap: 30px;
+      grid-row-gap: 20px;
+      width: 100%;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+      @media only screen and (max-width: 1350px) {
+        grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+      }
+
+      &-detail {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 100px 1fr;
+        width: 100%;
+        gap: 10px;
+        padding-bottom: 20px;
+
+        &:nth-child(n + 1) {
+          border-bottom: 0.1px dotted rgb(189, 188, 188);
+        }
+
+        h5 {
+          color: black;
+          margin-bottom: 0 !important;
+        }
+
+        &-des {
+          color: black !important;
+          font-size: 13px !important;
+          width: 200px !important;
+          word-wrap: break-word;
+          line-height: 15px;
+
+          @media only screen and (max-width: 1350px) {
+            width: 180px !important;
+          }
+
+          @media only screen and (max-width: 1250px) {
+            width: 160px !important;
+          }
+
+          @media only screen and (max-width: 675px) {
+            width: 320px !important;
+          }
+          @media only screen and (max-width: 550px) {
+            width: 280px !important;
+          }
+          @media only screen and (max-width: 500px) {
+            width: 250px !important;
+          }
+          @media only screen and (max-width: 460px) {
+            width: 230px !important;
+          }
+          @media only screen and (max-width: 450px) {
+            width: 220px !important;
+          }
+          @media only screen and (max-width: 440px) {
+            width: 210px !important;
+          }
+          @media only screen and (max-width: 430px) {
+            width: 200px !important;
+          }
+          @media only screen and (max-width: 420px) {
+            width: 190px !important;
+          }
+          @media only screen and (max-width: 410px) {
+            width: 180px !important;
+          }
+          @media only screen and (max-width: 400px) {
+            width: 170px !important;
+          }
+          @media only screen and (max-width: 390px) {
+            width: 160px !important;
+          }
+          @media only screen and (max-width: 380px) {
+            width: 150px !important;
+          }
+          @media only screen and (max-width: 370px) {
+            width: 140px !important;
+          }
+          @media only screen and (max-width: 360px) {
+            width: 130px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.myjourney_emp_card {
+  // display: flex;
+  // flex-flow: row wrap;
+  grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
+  display: grid;
+  align-content: space-around;
+  // background-color: black;
+  .my_emp_details {
+    // background-color: DodgerBlue;
+    display: grid;
+    grid-auto-flow: column;
+    width: auto;
+    min-width: 200px;
+    margin: 10px;
+    color: black;
+    // flex: 0 1 22%;
+    line-height: 75px;
+    font-size: 16px;
+    padding: 0 15px;
+    padding-left: 0px !important;
+    p:nth-child(1) {
+      font-family: 'Mont-Bold', Helvetica, Arial, serif, 'Mont-Bold', Helvetica,
+        Arial, serif !important;
+    }
+    p {
+      text-align: justify;
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .chro1 {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .footerChro {
+    position: relative;
+    text-align: end;
+    bottom: 0%;
+  }
+
+  .chrosDesk {
+    &_sec11 {
+      display: grid;
+      width: 100%;
+    }
+  }
+}
+
+.chromsg1 {
+  margin-top: 20px;
+}

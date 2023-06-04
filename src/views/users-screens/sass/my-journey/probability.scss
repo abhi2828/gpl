@@ -1,0 +1,203 @@
+@import '../base';
+@import '../../../../@core/scss/base/bootstrap-extended/variables';
+.probability {
+  display: grid;
+  width: 100%;
+  gap: 20px;
+  grid-auto-rows: 1fr 3fr;
+  height: min-content;
+  padding-bottom: 3rem;
+  // grid-template-columns: repeat(2, 1fr);
+
+  &_sec {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    grid-template-rows: 1fr;
+
+    h1 {
+      margin-bottom: 0;
+      display: grid;
+      align-items: center;
+      color: black;
+      font-size: 20px !important;
+      font-family: $font-family-sans-serif-bold, $font-family-monospace-bold;
+
+      // @media only screen and (max-width: 801px) {
+      //   font-size: 22px !important;
+      // }
+
+      // @media only screen and (max-width: 701px) {
+      //   font-size: 20px !important;
+      // }
+
+      @media only screen and (max-width: 501px) {
+        font-size: 16px !important;
+      }
+    }
+  }
+
+  &_btnSec {
+    justify-self: end;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 20px;
+    padding-right: 20px;
+
+    @media only screen and (max-width: 619px) {
+      gap: 10px;
+      padding-right: 10px;
+      align-items: center;
+      // justify-self: start;
+    }
+
+    &-icon {
+      display: none;
+      @media only screen and (max-width: 700px) {
+        display: block;
+        color: black;
+        // color: $color-godrej-green;
+      }
+
+      &-disabled {
+        @media only screen and (max-width: 700px) {
+          color: gray;
+          cursor: not-allowed;
+        }
+      }
+    }
+
+    &-btn {
+      height: 41px;
+      padding: 0px 20px;
+      font-size: 13px;
+
+      @media only screen and (max-width: 850px) {
+        font-size: 13px;
+        height: 45px;
+        padding: 0px 15px;
+      }
+
+      // @media only screen and (max-width: 700px) {
+      //   height: 20px !important;
+      //   width: 20px !important;
+      // }
+
+      @media only screen and (max-width: 700px) {
+        display: none;
+      }
+      @media only screen and (max-width: 510px) {
+        font-size: 9px;
+        height: 35px;
+      }
+
+      &-1 {
+        color: white;
+        background-color: $color-godrej-blue !important;
+        // color: $color-godrej-blue !important;
+        border-radius: 12px;
+        border: none;
+
+        &-disabled {
+          background-color: $color-gray-light !important;
+          cursor: not-allowed;
+        }
+      }
+
+      &-2 {
+        color: $color-godrej-blue;
+        background-color: white;
+        border-radius: 12px;
+        border: 1px solid $color-godrej-blue;
+
+        &-disabled {
+          color: $color-gray-light;
+          border: 1px solid $color-gray-dark;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+
+  &_progress {
+    width: 100%;
+    align-self: center;
+
+    h5:nth-child(2) {
+      color: black;
+    }
+
+    &-label {
+      font-family: $font-family-sans-serif, $font-family-monospace;
+      font-size: 16px;
+      @media only screen and (max-width: 1220px) {
+        font-size: 14px;
+      }
+
+      @media only screen and (max-width: 1000px) {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.content {
+  margin-left: 0 !important;
+}
+
+.css-zpcwqm-MuiStepConnector-root {
+  top: 20px !important;
+  // left: calc(-50% + -5px) !important;
+
+  @media only screen and (max-width: 1000px) {
+    top: 17px !important;
+    // left: calc(-50% + -10px) !important;
+  }
+}
+
+.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-completed {
+  color: $color-godrej-green !important;
+}
+
+.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root {
+  height: 2em !important;
+  width: 2em !important;
+  color: gray !important;
+  z-index: 10 !important;
+
+  @media only screen and (max-width: 1000px) {
+    height: 35px !important;
+    width: 35px !important;
+  }
+}
+
+.css-117w1su-MuiStepIcon-text {
+  font-family: $font-family-sans-serif-bold, $font-family-monospace-bold !important;
+}
+
+.css-1hv8oq8-MuiStepLabel-label {
+  font-family: $font-family-sans-serif, $font-family-monospace !important;
+  font-size: 16px !important;
+
+  @media only screen and (max-width: 501px) {
+    font-size: 13px !important;
+  }
+}
+
+.css-z7uhs0-MuiStepConnector-line {
+  border-top-style: dashed !important;
+  border-top-width: 2px !important;
+}
+
+.css-8t49rw-MuiStepConnector-line {
+  margin-left: 4px;
+  border-left-style: dashed !important;
+  border-left-width: 2px !important;
+}
+.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-active {
+  color: $color-godrej-green !important;
+}
+.css-1hv8oq8-MuiStepLabel-label.Mui-active {
+  color: $color-godrej-green !important;
+}

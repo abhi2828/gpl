@@ -1,0 +1,233 @@
+@import '../mixin.scss';
+@import '../../../../@core/scss/base/bootstrap-extended/variables';
+@import '../base';
+
+.testimonials {
+  @include contentLayout;
+  width: 100vw;
+  min-height: 250px;
+  max-height: 1fr;
+  grid-column: 1/-1;
+  align-content: start !important;
+  background: linear-gradient(to bottom, $color-godrej-green 60%, #f8f8f8 40%);
+  position: relative !important;
+  padding: 3.5vw 0rem;
+
+  @media only screen and (max-width: 500px) {
+    padding-top: 3.5vw;
+  }
+
+  &_all {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    padding: 30px;
+    // padding-top: 10.5rem;
+
+    @media only screen and (max-width: 992px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    @media only screen and (max-width: 500px) {
+      padding: 0rem 1.2rem !important;
+      gap: 0px;
+    }
+  }
+
+  // &_carousel {
+  // position: relative !important;
+
+  // .carousel .control-dots {
+  //   margin: 10px 0;
+  //   padding: 0;
+  //   text-align: center;
+  //   left: -687px !important;
+  //   position: absolute;
+  //   z-index: 999999999999999;
+  //   bottom: -12px;
+  // }
+  // }
+
+  @media only screen and (max-width: 992px) {
+    // grid-row: 5/17;
+    background: linear-gradient(
+      to bottom,
+      $color-godrej-green 100%,
+      $color-white 0%
+    );
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  @media only screen and (max-width: 768px) {
+    background: linear-gradient(
+      to bottom,
+      $color-godrej-green 100%,
+      $color-white 0%
+    );
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  &_sec1 {
+    display: grid;
+    justify-items: center;
+    color: #fff;
+    gap: 1vw;
+    padding-bottom: 2.3vw;
+
+    @media only screen and (max-width: 500px) {
+      padding-bottom: 20px;
+    }
+
+    h1 {
+      color: $color-white;
+      font-family: $font-family-sans-serif-bold, $font-family-monospace-bold;
+      font-style: normal;
+      font-weight: 800;
+      font-size: calc(1.325rem + 0.9vw);
+      text-transform: capitalize;
+
+      // @media only screen and (max-width: 600px) {
+      //   font-size: 19px;
+      // }
+    }
+
+    p {
+      font-family: 'Mont';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 13px;
+      text-align: center;
+      text-transform: capitalize;
+      color: #ffffff;
+      @media only screen and (max-width: 600px) {
+        font-size: 3vw;
+      }
+    }
+  }
+
+  &_carousel {
+    width: 100vw;
+    // padding: 0px 2.5rem;
+    @media only screen and (max-width: 900px) {
+      // width: 92vw;
+      padding: 0px 0px;
+    }
+  }
+
+  &_sec2 {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3, minmax(78px, 1fr));
+    gap: 3vw;
+    // padding: 10px 10px 0px;
+    padding: 10px 10px 0px 15px;
+    position: relative;
+    left: -8px !important;
+    height: 100%;
+
+    @media only screen and (max-width: 900px) {
+      // width: 92vw;
+      padding-left: 10px;
+      left: 0 !important;
+    }
+
+    .cardDetail {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 16px;
+      margin-bottom: 3rem !important;
+    }
+
+    @media only screen and (max-width: 992px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    @media only screen and (max-width: 768px) {
+      display: grid;
+      grid-template-columns: 1fr;
+      // padding: 0rem 2rem;
+    }
+  }
+
+  &_sec3 {
+    position: relative;
+    display: grid;
+    justify-content: end;
+    color: $color-godrej-blue;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding-right: 40px;
+    @media only screen and (max-width: 768px) {
+      padding-right: 5vw;
+    }
+
+    p {
+      font-weight: 600;
+      font-size: 18px !important;
+      text-transform: capitalize;
+      color: #0077b9;
+      position: relative;
+      top: -18px !important;
+
+      z-index: 1;
+      @media only screen and (max-width: 992px) {
+        color: $color-white;
+      }
+      @media only screen and (max-width: 600px) {
+        font-size: 14px !important;
+      }
+    }
+  }
+}
+
+.testimonials .control-arrow {
+  display: block !important;
+}
+
+.testimonials .carousel .control-dots {
+  text-align: left !important;
+  left: 2.5rem !important;
+
+  @media only screen and (max-width: 768px) {
+    left: 2rem !important;
+  }
+}
+
+.carousel .carousel-status {
+  right: 35px !important;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .testimonial_card_quotes {
+    display: none !important;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .testimonial_card_quotes {
+    display: none !important;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .testimonial_card_quotes {
+    width: 40px !important;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+  .testimonial_card_quotes {
+    width: 30px !important;
+    height: 40px !important;
+  }
+}
